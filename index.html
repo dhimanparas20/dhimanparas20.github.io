@@ -1,15 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-  </head>
-  <body>
-    <main>
-        <h1>Welcome to My Website</h1>  
-        <p>This is my new website which is hosted on GitHub Pages!</p>
-    </main>
-  </body>
+	<head>
+		<meta charset="utf-8">
+
+		<title>Paras</title>
+		<link rel="icon" type="image/x-icon" href="/images/favicon.png">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+        <meta name="author" content="templatemo">
+        <!-- 
+        Lavish HTML CSS Template
+        https://templatemo.com/tm-458-lavish
+        -->
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- animate -->
+		<link rel="stylesheet" href="css/animate.min.css">
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- font-awesome -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- google font -->
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>
+		<!-- fullpage -->
+		<link rel="stylesheet" href="css/jquery.fullPage.css">
+		<!-- custom -->
+		<link rel="stylesheet" href="css/templatemo-style.css">
+
+		<style>
+			.scroll-container {
+				width: 100%;
+				overflow: hidden;
+			}
+
+			.logo-row {
+				display: flex;
+				animation: scroll 30s linear infinite;
+				animation-delay: -10s; /* Delay the animation start */
+			}
+
+			.logo {
+				width: 65px; /* Adjust the width and height as needed */
+				height: 65px;
+				border-radius: 50%; /* Makes the logos circular */
+				margin: 0 10px; /* Adjust spacing between logos */
+				margin-top: 30px;
+				background-color: #ddd8d8; /* Background color for the circular container */
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				opacity: 0; /* Start with opacity 0 to make logos appear one by one */
+				animation: appear 5s linear infinite, scroll 20s linear infinite;
+			}
+
+			.logo img {
+				max-width: 75%; /* Ensure the logo fits within the circular container */
+				max-height: 75%;
+			}
+
+			@keyframes scroll {
+				0% {
+					transform: translateX(0);
+				}
+				100% {
+					transform: translateX(+100%); /* Move icons to the left by the width of the container */
+				}
+			}
+
+			@keyframes appear {
+				0%, 100% {
+					opacity: 0;
+				}
+				20%, 100% {
+					opacity: 1;
+				}
+			}
+
+
+	</style>
+
+	</head>
+	<body>
+
+	<div id="fullpage">
+
+		<!-- start home -->
+		<div id="home" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8 wow fadeIn" data-wow-delay="0.9s">
+						<h3>Simple and Elegant</h3>
+						<a href="https://github.com/dhimanparas20" class="color-box" target="_blank"><h1>Paras Dhiman</h1></a>
+						<h2 class="rotate">STUDENT &AMP; FREELANCER,  TECHY &AMP; CODE GEEK, KEEN &AMP; QUICK LEARNER</h2>
+						<p>They call me "JACK OF ALL TRADES, MASTER OF NONE"</p>
+						<a href="#work" class="btn btn-default smoothScroll wow fadeInUp" data-wow-delay="1s">Get started</a>
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+			</div>
+		</div>
+		<!-- end home -->
+
+		<!-- start work -->
+		<div id="work" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 wow bounce">
+						<h2>Areas Of My Knowledge</h2>
+					</div>
+        </div>
+
+        <div class="row">
+					<div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
+						<div class="media">
+							<div class="media-object media-left">
+								<i class="fa fa-laptop"></i>
+							</div>
+							<div class="media-body">
+								<h3 class="media-heading">Backend Developer</h3>
+								<p>I'm Great at making backend logics, <span><a href="https://github.com/dhimanparas20/Fake_Mail_Generator-Telegram-bot" target="_blank">Telegram Bots</a></span>,Algorithms and REST API's. My major language is Python. Minors are: JS, Jquery, AJAX, JSON, XML, C, C++, Git, Bash etc.<a href="https://github.com/dhimanparas20/projects" target="_blank">Child Projects</a></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
+						<div class="media">
+							<div class="media-object media-left">
+								<i class="fa fa-link"></i>
+							</div>
+							<div class="media-body">
+								<h3 class="media-heading">Automation</h3>
+								<p>I love Automations and Robotics. Hence I play alot around IOT. I have been working with esp8266/esp32 Arduino UNO/Nano raspberry PI for around 3 years. <a href="https://github.com/dhimanparas20/Arduino-Projects" target="_blank"> Child Projects</a></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
+						<div class="media">
+							<div class="media-object media-left">
+								<i class="fa fa-database"></i>
+							</div>
+							<div class="media-body">
+								<h3 class="media-heading">Database Designer</h3>
+								<p>Familier to MySql, MongoDB, SqLite, Postgress, I can build/designe any type(SQL/NoSQL) of Database system and link them with front end or your server, effeciently.  </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
+						<div class="media">
+							<div class="media-object media-left">
+								<i class="fa fa-paper-plane"></i>
+							</div>
+							<div class="media-body">
+								<h3 class="media-heading">UI &AMP; UX Design</h3>
+								<p>Not a "PRO" but yes i know CSS HTML and JS upto the knowledge of making synamic websites of medium level projects.<br>Sample: <span><a href="https://www.rockonrescue.com/home/" target="_blank">Rock on Rescue</a></span><br>This was child Project of mine. Rest can be found on my <span><a href="https://github.com/dhimanparas20" target="_blank">GitHub</a></span> </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
+						<div class="media">
+							<div class="media-object media-left">
+								<i class="fa fa-cloud"></i>
+							</div>
+							<div class="media-body">
+								<h3 class="media-heading">Cloud Handler</h3>
+								<p>worked on platforms like: GCP ,AWS ,GoDaddy, Heroku, Git Railways, Back4App, Render, MongoDb Cloud; I can Host websites, manage servers run API's and do alot more with the clouds.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
+						<div class="media">
+							<div class="media-object media-left">
+								<i class="fa fa-laptop"></i>
+							</div>
+							<div class="media-body">
+								<h3 class="media-heading">Ameature FullStacker</h3>
+								<p>As they say "Jack Of All Trades, Master Of None" as I do. My front end skills are not that good(so were my drawings/paintings) Yet I Try to Perfectize them day by day to make them compatible with my backend and logic knowlodge.<br>Child Project: <a href="https://github.com/dhimanparas20/Banking-System-interface" target="_blank">Bank management System</a></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
+						<div class="media">
+							<div class="media-object media-left">
+								<i class="fa fa-android"></i>
+							</div>
+							<div class="media-body">
+								<h3 class="media-heading">Custom Rom developer</h3>
+								<p>Building Custom Roms since 2019.<br> Officially Maintained devices: X00TD,X00P,Sweet,RMX3371,RMX1825,10orG.<br>Some Famous Roms manintained(OFFICIALLY) <span><a href="https://crdroid.net/X00TD/7" target="_blank">Cr Droid</a></span>, <span><a href="https://downloads.blissroms.org/download/sweet/" target="_blank"> BlissRoms</a></span>, <span><a href="https://cherishos.com/" target="_blank">Cherish OS</a></span>, <span><a href="https://sourceforge.net/projects/projectsakura/files/sweet/" target="_blank">Project Sakura</a></span>, <span><a href="https://www.droidontime.com/devices/X00TD"	target="_blank">DotOS</a></span>, <span><a href="https://havoc-os.com/" target="_blank">Havoc OS</a></span>, <span><a href="https://project-legionos.org/" target="_blank">Legion OS</a></span> etc. <br><a href="https://github.com/dhimanparas20/projects" target="_blank">Device trees</a></p>
+							</div>
+						</div>
+					</div>
+
+
+
+				</div>
+			</div>
+		</div>
+		<!-- end work -->
+
+		<!-- start about -->
+		<div id="about" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-xs-11 wow fadeInLeft" data-wow-delay="0.9s">
+						<h2>ABOUT Paras</h2>
+						<h4>Student and Developer</h4>
+						<p>Hi there, Im a 20 years Old, 3rd Year B.Tech CSE Student From Shimla, Himachal Pradesh, India.</p>
+						<p>I'm passionate about learning new stuff and building Logics for problems.I'm a quick learner and adapt to new environments aswell. I would love to Freelance for someone.<br>My Hobbies are: Swimming, Coding, Sports(Footbll) Music etc.</p>
+					</div>
+
+					<div class="col-md-6 col-xs-11 wow fadeInRight" data-wow-delay="0.9s">
+						<span class="text-top">Web Design <small>70%</small></span>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+							</div>
+						<span>Databases <small>80%</small></span>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+							</div>
+						<span>Backend Programming<small>90%</small></span>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+							</div>
+						<span>Automation/IOT <small>90%</small></span>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+							</div>
+							<span>Cloud Stuff<small>75%</small></span>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+							</div>
+					</div>
+				</div>
+				<div class="scroll-container">
+					<div class="logo-row">
+						<div class="logo"><img src="images/py.png" alt="Python"></div>
+						<div class="logo"><img src="images/cpp.png" alt="C++"></div>
+						<div class="logo"><img src="images/js.png" alt="JS"></div>
+						<div class="logo"><img src="images/social.png" alt="AWS"></div>
+						<div class="logo"><img src="images/chevron.png" alt="GCP"></div>
+						<div class="logo"><img src="images/git.png" alt="GitHub"></div>
+						<div class="logo"><img src="images/iot.png" alt="Arduino"></div>
+						<div class="logo"><img src="images/heroku.png" alt="Heroku"></div>
+						<div class="logo"><img src="images/gnu-bash.png" alt="Bash"></div>
+						<div class="logo"><img src="images/xml-extension.png" alt="XML"></div>
+						<div class="logo"><img src="images/api.png" alt="API"></div>
+						<div class="logo"><img src="images/json-file.png" alt="JSON"></div>
+						<div class="logo"><img src="images/mysql.png" alt="MYSQL"></div>
+						<div class="logo"><img src="images/mongo.png" alt="MongoDB"></div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<!-- end about -->
+
+		<!-- start portfolio -->
+		<div id="portfolio" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="wow bounce">Gallery</h2>
+				</div>
+				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+					<div class="portfolio-thumb">
+						<img src="images/Paras.jpg" class="img-responsive" alt="portfolio img">
+							<div class="portfolio-overlay">
+								<h4>Yep Thats ME</h4>
+								<h5>Author: Cindy</h5>
+							</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+					<div class="portfolio-thumb">
+						<img src="images/portfolio-img2.jpg" class="img-responsive" alt="portfolio img">
+							<div class="portfolio-overlay">
+								<h4>Web App</h4>
+								<h5>Author: Linda</h5>
+							</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+					<div class="portfolio-thumb">
+						<img src="images/portfolio-img3.jpg" class="img-responsive" alt="portfolio img">
+							<div class="portfolio-overlay">
+								<h4>Mobile App</h4>
+								<h5>Author: Kate</h5>
+							</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+					<div class="portfolio-thumb">
+						<img src="images/shimla.jpg" class="img-responsive" alt="portfolio img">
+							<div class="portfolio-overlay">
+								<h4>My Beautiful Hometown</h4>
+								<h5>AKA: Shimla</h5>
+							</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+					<div class="portfolio-thumb">
+						<img src="images/portfolio-img5.jpg" class="img-responsive" alt="portfolio img">
+							<div class="portfolio-overlay">
+								<h4>New Animation</h4>
+								<h5>Author: Kathy</h5>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end portfolio -->
+
+		<!-- start contact -->
+		<div id="contact" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-lg-offset-1 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+						<address>
+							<p class="contact-title">CONTACT ME</p>
+							<p><i class="fa fa-phone"></i><a href="https://t.me/Ken_kaneki_69" target="_blank">Telegram</a></p>
+							<p><i class="fa fa-envelope-o"></i> dhimanparas20@gmail,com</p>
+							<p><i class="fa fa-map-marker"></i> Shimla, Himachal Pradesh, 171009</p>
+						</address>
+					</div>
+					<div class="col-lg-6 col-md-6 col-xs-10 wow fadeInUp" data-wow-delay="0.6s">
+						<form role="form" method="post" action="#">
+							<input name="name" type="text" class="form-control" id="name" placeholder="Your Name">
+							<input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
+							<textarea name="message" rows="5" class="form-control" id="message" placeholder="Your Message"></textarea>
+							<input name="send" type="submit" onclick="contactme()" class="form-control" id="send" value="SEND ME">
+						</form>
+					</div>
+					<div class="col-md-1 col-sm-1"></div>
+				</div>
+			</div>
+		</div>
+		<!-- end contact -->
+
+		<!-- start footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 wow fadeIn" data-wow-delay="0.9s">
+						<p>Copyright &copy; 2021 Paras Personal Profile.</p>
+						<hr>
+						<ul class="social-icon">
+							<li><a href="https://github.com/dhimanparas20" target="_blank" class="fa fa-github"></a></li>
+							<li><a href="https://t.me/Ken_kaneki_69" target="_blank" class="fa fa-whatsapp"></a></li>
+							<li><a href="https://www.instagram.com/i_._anonymous/" target="_blank" class="fa fa-instagram"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end footer -->
+
+	</div>
+
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- fullpage -->
+		<script src="js/jquery.fullPage.js"></script>
+		<!-- smoothScroll -->
+		<script src="js/smoothscroll.js"></script>
+		<!-- wow -->
+		<script src="js/wow.min.js"></script>
+		<!-- text rotater -->
+		<script src="js/jquery.simple-text-rotator.js"></script>
+		<!-- custom -->
+		<script src="js/custom.js"></script>
+		<script>
+			function contactme() {
+				var name = document.getElementById("name").value;
+				var email = document.getElementById("email").value;
+				var message = document.getElementById("message").value;
+
+				// Construct the WhatsApp message link
+				var whatsappMessage = "https://wa.me/918352068860?text=" +
+						encodeURIComponent("Name: " + name + "\nEmail: " + email + "\nMessage: " + message);
+
+				// Open WhatsApp in a new tab with the pre-filled message
+				window.open(whatsappMessage, '_blank');
+				}
+		</script>
+		<script>
+			const scrollContainer = document.querySelector('.scroll-container');
+
+			scrollContainer.addEventListener('mouseenter', () => {
+				scrollContainer.style.animationPlayState = 'paused';
+			});
+
+			scrollContainer.addEventListener('mouseleave', () => {
+				scrollContainer.style.animationPlayState = 'running';
+			});
+
+		</script>
+
+	</body>
 </html>
